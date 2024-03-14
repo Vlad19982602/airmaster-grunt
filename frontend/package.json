@@ -1,0 +1,25 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "frontend part of the client app",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vlad19982602/airmaster-grunt.git"
+  },
+  "author": "FV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vlad19982602/airmaster-grunt/issues"
+  },
+  "homepage": "https://github.com/Vlad19982602/airmaster-grunt#readme",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
