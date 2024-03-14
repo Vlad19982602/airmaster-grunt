@@ -18,8 +18,18 @@
   "homepage": "https://github.com/Vlad19982602/airmaster-grunt#readme",
   "devDependencies": {
     "grunt": "^1.6.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-cssmin": "latest",
     "grunt-contrib-jshint": "^3.2.0",
-    "grunt-contrib-less": "^3.0.0",
-    "grunt-contrib-watch": "^1.1.0"
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-nodeunit": "^5.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "latest",
+    "install": "^0.13.0",
+    "npm": "^10.5.0",
+    "webpack": "^5.90.3",
+    "webpack-stream": "^7.0.0"
   }
 }
