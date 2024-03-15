@@ -28,6 +28,7 @@
     "grunt-contrib-uglify": "^5.2.2",
     "grunt-contrib-watch": "latest",
     "install": "^0.13.0",
+    "load-grunt-tasks": "^5.1.0",
     "npm": "^10.5.0",
     "webpack": "^5.90.3",
     "webpack-stream": "^7.0.0"

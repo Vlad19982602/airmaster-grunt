@@ -1,9 +1,18 @@
-grunt.loadNpmTasks('grunt-contrib-concat');
 
 export default function (grunt) {
 
+    require('load-grunt-tasks')(grunt);
+
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+
+        
 
         concat: {
             options: {
@@ -60,12 +69,7 @@ export default function (grunt) {
     });
 
 
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'sass:dev', 'watch', 'jshint']);
 
-
-    grunt.registerTask('default', ['concat'], ['uglify'], ['sass'], ['sass:dev', 'watch'], ['jshint']);
+    grunt.registerTask('dist', ['concat:dist', 'uglify:dist']);
 }
